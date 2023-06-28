@@ -44,7 +44,7 @@ const addLineSeries = (data, color, assetName) => {
 };
 
 // Load data and add line series for TY
-d3.csv("/data/TY-price.csv").then((tyData) => {
+d3.csv("/data/TY-Price.csv").then((tyData) => {
   const tyTimeSeriesData = tyData.map((d) => ({
     time: new Date(d.Date).getTime(),
     value: +d.Price,
